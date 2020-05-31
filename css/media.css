@@ -1,0 +1,150 @@
+/*Start Grid System*/
+
+@media (min-width: 576px) {
+  /* Small Devices => Phone*/
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Medium Devices => Tablets*/
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Desktops */
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Large Screens */
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/*End Grid System*/
+
+/*Start Phone */
+
+@media (max-width: 575px) {
+  .logo {
+    width: 350px;
+    font-size: 15px;
+  }
+  .logo::first-letter {
+    font-size: 20px;
+  }
+  .introduction-text h1 {
+    font-size: 26px;
+  }
+  .about-us {
+    display: block;
+    text-align: center;
+  }
+  .about-us .info-box {
+    padding: 0;
+  }
+  .skills .skill-box {
+    display: block;
+    padding: 5px 5px 10px 5px;
+  }
+  .skill-box .skill-name {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .features .feat-box {
+    width: 100% !important;
+    margin-bottom: 30px !important;
+  }
+}
+
+/*End Phone */
+
+/*Start Tablet */
+@media (max-width: 991px) {
+  .headre-area .links {
+    display: none;
+  }
+  .headre-area .links.open {
+    background-color: #fff;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    right: 9px;
+    top: 60px;
+    width: 75%;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .headre-area .links.open li {
+    display: block;
+    margin: 10px;
+  }
+  .headre-area .links.open li a {
+    color: var(--main-color);
+    font-weight: bold;
+  }
+  .headre-area .links-container .fa-bars {
+    display: inline-block;
+    color: var(--main-color);
+  }
+  .features .feat-box {
+    width: calc(100% / 2);
+    margin-bottom: 30px;
+  }
+  .testimonials .ts-box {
+    width: 100%;
+    float: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+  .contact form .left,
+  .contact form .right {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us {
+    display: block;
+    text-align: center;
+  }
+  .about-us .info-box {
+    padding: 0;
+  }
+  .skills .skill-box {
+    display: block;
+    padding: 5px 5px 10px 5px;
+  }
+  .skills .skill-name {
+    width: 100%;
+    margin-bottom: 10px;
+    margin: auto;
+    padding-bottom : 4px;
+  }
+  .timeline .timeline-content .left,
+  .timeline .timeline-content .right {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .timeline .timeline-content .content {
+    padding: 10px;
+  }
+  .timeline .timeline-content .left:before,
+  .timeline .timeline-content .right:before {
+    display: none;
+  }
+  .timeline .timeline-content .left .content:before,
+  .timeline .timeline-content .right .content:before {
+    display: none;
+  }
+}
